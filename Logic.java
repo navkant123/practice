@@ -13,3 +13,13 @@ private static String[] finalString(String str1[], String str2[]) {
 		}
 		return result;
 	}
+private static String subString(String str, int startFrom, int endBefore) {
+		String newStr = "";
+		for (int i = startFrom; i < endBefore; i++) {
+			char charValue = str.charAt(i);
+			newStr += charValue;
+//			newStr += String.valueOf(str.charAt(i));
+		}
+
+		return newStr;
+	}
